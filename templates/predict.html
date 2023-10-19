@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .result {
+            background-color: #3498db;
+            color: #ecf0f1;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emotion Classify Result</h1>
+    </header>
+    <div class="container">
+        <div class="result">
+            <p>The Classify emotion is: {{ prediction.emotion }}</p>
+        </div>
+    </div>
+</body>
+</html>
